@@ -2,6 +2,9 @@
 
 Figuring out how `uv` deals with nested projects. See git history for detailed changes after every step.
 
+> [!NOTE]
+> This is not considered to be the correct approach. The nested projects do not use the library structure but are rather `uv init` (`--app`) projects. Please check the official [UV docs](https://docs.astral.sh/uv/concepts/workspaces/).
+
 The `outer` project contains two nested ones (`first` and `second`). The nested projects were created by simply running `uv init first` inside the `outer` dir. This sets up the uv workspace in the `outer` project.
 
 ```shell
